@@ -56,3 +56,18 @@ Execute the following commands to have a working git client with some nice to ha
 - git config --global user.name "My Name"
 - git config --global alias.graph "log --oneline --graph"
 - git config --global alias.ciff "diff --cached"
+
+## ZSH Shell
+
+- Install zsh: *sudo pacman -Syu zsh*
+- Install nerd fonts: *sudo pacman -Syu nerd-fonts* and choose all
+- Make zsh default shell for current user: *chsh -s /bin/zsh*
+- Create new profile in **Konsole**
+    - Navigate to Settings -> Configure Konsole...
+    - Select Profiles
+    - Create a new profile
+    - Set **Command:** to */bin/zsh*
+    - Optional: Under Appearance set **Font:** to *JetBrainsMono Nerd Font 14pt*
+- Set the new profile as default
+- Install and configure **oh-my-zsh** using *sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"*
+    - In **~/.zshrc** set **ZSG_THEME** to *agnoster*
